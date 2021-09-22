@@ -4,6 +4,7 @@ platform :ios, '9.0'
 
 target 'YLBFramework_Example' do
   pod 'YLBFramework', :path => '../'
+#pod 'YLBFramework', :path => '../YLBFramework-0.1.0'
 
   target 'YLBFramework_Tests' do
     inherit! :search_paths

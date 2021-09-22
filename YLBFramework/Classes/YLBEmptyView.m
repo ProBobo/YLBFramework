@@ -16,7 +16,17 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [self setupSubviews];
+//        [self setupSubviews];
+        NSString *imgPath = @"YLBFramework.bundle/icon_grid_emptyView";
+        UIImage *image = [UIImage imageNamed:imgPath
+                              inBundle: [NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:nil];
+        
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.bounds];
+        _imageView = imageView;
+        imageView.image = image;
+        [self addSubview:imageView];
+
+
     }
     return self;
 }
@@ -34,9 +44,10 @@
         NSLog(@"bundle load framework err:%@",error);
     }
     
+    UIImage *image = [UIImage imageNamed:@"icon_grid_emptyView" inBundle:bundle compatibleWithTraitCollection:nil];
+    
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.bounds];
     _imageView = imageView;
-    UIImage *image = [UIImage imageNamed:@"icon_grid_emptyView" inBundle:bundle compatibleWithTraitCollection:nil];
     imageView.image = image;
     [self addSubview:imageView];
 }

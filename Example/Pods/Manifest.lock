@@ -1,16 +1,16 @@
 PODS:
-  - YLBFramework (0.1.2)
+  - YLBFramework (0.1.3)
 
 DEPENDENCIES:
-  - YLBFramework (from `../`)
+  - YLBFramework (from `../YLBFramework-0.1.3`)
 
 EXTERNAL SOURCES:
   YLBFramework:
-    :path: "../"
+    :path: "../YLBFramework-0.1.3"
 
 SPEC CHECKSUMS:
-  YLBFramework: a681784f077f0a38bd2a6e57568e0a75f4f4b886
+  YLBFramework: 86c56b396f092bf23301c464ecbc2f8aed674bdc
 
-PODFILE CHECKSUM: 0eee86a4d65d3bfaeb7a1e381222fc8c97908a1e
+PODFILE CHECKSUM: c647bbd4ecbdf7257b74d8de9de6e7b88291df2c
 
 COCOAPODS: 1.10.1

@@ -9,6 +9,9 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+1、pod package生成的framework不能加载资源图片。
+2、使用use_frameworks!方法pod install生成的framework可以正常加载
+
 ## Requirements
 
 ## Installation

@@ -1,6 +1,6 @@
 {
   "name": "YLBFramework",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "YLBFramework.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/ProBobo/YLBFramework",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/ProBobo/YLBFramework.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "9.0"

@@ -1,5 +1,5 @@
 PODS:
-  - YLBFramework (0.1.1)
+  - YLBFramework (0.1.2)
 
 DEPENDENCIES:
   - YLBFramework (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  YLBFramework: f886f16caaff4e943c26c829730938df3b4ae558
+  YLBFramework: a681784f077f0a38bd2a6e57568e0a75f4f4b886
 
 PODFILE CHECKSUM: 0eee86a4d65d3bfaeb7a1e381222fc8c97908a1e
 

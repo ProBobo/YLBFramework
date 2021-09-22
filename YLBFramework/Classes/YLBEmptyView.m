@@ -18,7 +18,13 @@
     if (self) {
 //        [self setupSubviews];
 //        [self setupSubviews2];
-        [self setupSubviews3];
+//        [self setupSubviews3];
+        
+        UIImage *image = [[self class] obtain_imageNamed:@"icon_grid_emptyView"];
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.bounds];
+        _imageView = imageView;
+        imageView.image = image;
+        [self addSubview:imageView];
     }
     return self;
 }
@@ -69,4 +75,18 @@
     imageView.image = [UIImage imageNamed:@"icon_grid_emptyView" inBundle:bundle compatibleWithTraitCollection:nil];
     [self addSubview:imageView];
 }
+
++ (NSBundle *)obtain_bunlde {
+    NSString *resourceName = @"YLBFramework";
+    NSURL *url = [[NSBundle bundleForClass:[self class]] URLForResource:resourceName withExtension:@"bundle"];
+    NSBundle *bundle = [NSBundle bundleWithURL:url];
+    return bundle;
+}
+
++ (UIImage *)obtain_imageNamed:(NSString *)name {
+    NSBundle *bundle = [[self class] obtain_bunlde];
+    UIImage *image = [UIImage imageNamed:name inBundle:bundle compatibleWithTraitCollection:nil];
+    return image;
+}
+
 @end

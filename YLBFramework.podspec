@@ -32,9 +32,9 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'YLBFramework/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'YLBFramework' => ['YLBFramework/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'YLBFramework' => ['YLBFramework/Assets/*']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

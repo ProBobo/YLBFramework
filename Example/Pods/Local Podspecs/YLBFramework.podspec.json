@@ -1,7 +1,7 @@
 {
   "name": "YLBFramework",
   "version": "0.1.0",
-  "summary": "A short description of YLBFramework.",
+  "summary": "YLBFramework.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/ProBobo/YLBFramework",
   "license": {
@@ -18,5 +18,10 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "YLBFramework/Classes/**/*"
+  "source_files": "YLBFramework/Classes/**/*",
+  "resource_bundles": {
+    "YLBFramework": [
+      "YLBFramework/Assets/*"
+    ]
+  }
 }

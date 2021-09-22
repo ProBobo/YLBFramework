@@ -7,6 +7,7 @@
 //
 
 #import "YLBViewController.h"
+#import <YLBFramework/YLBEmptyView.h>
 
 @interface YLBViewController ()
 
@@ -18,6 +19,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    YLBEmptyView *view = [[YLBEmptyView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
+    [self.view addSubview:view];
 }
 
 - (void)didReceiveMemoryWarning
